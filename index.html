@@ -27,7 +27,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                clifford: '#da373d'
               }
             }
           }
@@ -37,12 +37,38 @@
 
 </head>
 <body class="common_font">
-    <header class="py-8">
+    <header class="py-8 bg-gradient-to-t from-white to-gray-100">
+      <div class="container mx-auto">
         <!-- Menu bar -->
-        <nav class="container mx-auto border border-red-500">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
+        <div class="navbar">
+            <div class="navbar-start">
+              <a class="relative ml-9 hover:cursor-pointer">
+                <i class="fa-solid fa-arrow-right absolute -left-8 top-1 -rotate-45 bg-[#ABEF5F] p-2 rounded-full"></i>
+                <span class="text-3xl font-bold ml-1">Rinterio</span>
+            </a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#737373] text-lg font-semibold">
+                <li class="text-[#212121] font-bold"><a>Home</a></li>
+                <li class="hover:text-[#212121] hover:font-bold"><a>services</a></li>
+                <li class="hover:text-[#212121] hover:font-bold"><a>Portfolio</a></li>
+                <li class="hover:text-[#212121] hover:font-bold"><a>Blogs</a></li>
+                <li class="hover:text-[#212121] hover:font-bold"><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+                <div class="max-[320px]:hidden max-[639px]:hidden md:mr-4 md:space-x-5 lg:space-x-5">
+                <i class="fa-solid fa-magnifying-glass bg-[#fff] p-3 rounded-full hover:cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping bg-[#fff] p-3 rounded-full hover:cursor-pointer"></i>
+                <a href="#" class="btn bg-[#ABEF5F] rounded-full">
+                    <span class="font-extrabold">Book Consult</span> 
+                    <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] p-2 rounded-full"></i>
+                </a>
+                </div>
+
+                <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -59,43 +85,28 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      class="absolute -right-2 menu-sm dropdown-content bg-gray-600 rounded-box z-[1] mt-3 w-36 p-2 shadow text-center space-y-3">
+                        <li><a>Home</a></li>
+                        <li><a>services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div>
-              </div>
-        </nav>
+            </div>
+
+          </div>
+        
 
         <!-- Hero section -->
-        <div></div>
+        <div class="py-8 text-center">
+          <img src="./assets/banner.png" alt="Banner Img" class="max-w-[572] mx-auto">
+          <h1 class="w-full lg:w-2/3 mx-auto text-5xl font-black">A barn house of this design has a striking appearance</h1>
+          <p class="w-[90%] lg:w-2/3 mx-auto mt-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <a href="#" class="btn bg-[#ABEF5F80] rounded-full mt-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-2 rounded-full"></i></a>
+        </div>
+
+      </div>
     </header>
 
     <main></main>
