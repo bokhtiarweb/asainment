@@ -21,6 +21,9 @@
         .common_font{
             font-family: "Manrope", system-ui;
         }
+        .rounded_i{
+          padding: 9px 10px 0px 9px;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -40,7 +43,7 @@
     <header class="pt-8 pb-24 bg-gradient-to-t from-white to-gray-100">
       <div class="container mx-auto">
         <!-- Menu bar -->
-        <div class="navbar">
+        <div class="navbar sm:w-[335px] lg:w-full sm:mx-auto">
             <div class="navbar-start">
               <a class="relative ml-9 hover:cursor-pointer">
                 <i class="fa-solid fa-arrow-right absolute -left-8 top-1 -rotate-45 bg-[#ABEF5F] p-2 rounded-full"></i>
@@ -99,18 +102,18 @@
         
 
         <!-- Hero section -->
-        <div class="py-8 max-[640px]:px-4 text-center">
+        <div class="py-8 sm:w-[365px] lg:w-full sm:mx-auto sm:px-4 text-center">
           <img src="./assets/banner.png" alt="Banner Img" class="max-w-[572] mx-auto">
-          <h1 class="lg:w-2/3 mx-auto lg:text-5xl sm:text-4xl font-black">A barn house of this design has a striking appearance</h1>
+          <h1 class="lg:w-2/3 mx-auto lg:text-5xl sm:text-3xl font-black">A barn house of this design has a striking appearance</h1>
           <p class="lg:w-2/3 sm:w-[96%] mx-auto mt-5 text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-          <button class="max-[640px]:w-full btn bg-[#ABEF5F80] rounded-full mt-8"><span class="font-black">View Details</span> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-2 rounded-full"></i></button>
+          <button class="lg:w-[auto] sm:w-full btn bg-[#ABEF5F80] rounded-full mt-8"><span class="font-black">View Details</span> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-2 rounded-full"></i></button>
         </div>
 
       </div>
     </header>
 
     <main>
-      <section class="py-24 bg-[#F4F4F4]">
+      <section class="lg:py-24 sm:py-10 bg-[#F4F4F4] sm:w-[335px] lg:w-full sm:mx-auto">
         <div class="container mx-auto relative border">
           <img src="./assets/Vector.png" alt="Vector" class="absolute -left-16 -top-20 border-2 border-gray-300 border-dashed pt-4 pb-4 max-[640px]:hidden max-[768px]:hidden">
 
@@ -119,14 +122,14 @@
           <div class="grid lg:grid-cols-2">
             <!-- Text contents -->
             <div class="mt-16 max-[639px]:px-3 sm:px-3">
-              <h1 class="text-4xl max-[639px]:text-center sm:text-center lg:text-left font-black pb-4">We design thoughtful, liveable spaces</h1>
+              <h1 class="lg:text-4xl sm:text-3xl max-[639px]:text-center sm:text-center lg:text-left font-black pb-4">We design thoughtful, liveable spaces</h1>
               <p class="font-lg max-[639px]:text-center sm:text-center lg:text-left text-sm">At the heart of every great design is a profound understanding of the people who will inhabit the space. Designing thoughtful, livable spaces is not just about aesthetics.</p>
 
               <!-- Two rows -->
               <div class="pt-10">
               <div class="flex py-4 bg-white rounded-lg border">
                 <div class="px-2">
-                  <img src="./assets/commercial.png" alt="Commercial" class="w-[64px] max-[639px]:w-[150px]">
+                  <img src="./assets/commercial.png" alt="Commercial" class="w-[64px] max-[639px]:w-[150px] sm:w-[150px]">
                 </div>
                   <div class="px-2 ms:text-left">
                     <h2 class="font-black">Commercial</h2>
@@ -137,7 +140,7 @@
                 
               <div class="flex py-4 mt-6 bg-white rounded-lg border">
                 <div class="px-2">
-                  <img src="./assets/residential.png" alt="Residential" class="w-[64px] max-[639px]:w-[150px]">
+                  <img src="./assets/residential.png" alt="Residential" class="w-[64px] max-[639px]:w-[150px] sm:w-[150px]">
                 </div>
                   <div class="px-2">
                     <h2 class="font-black">Residential</h2>
@@ -150,13 +153,13 @@
             
             <!-- Image contents -->
              <div>
-              <img src="./assets/Rectangle.png" alt="Rectangle" class="w-[573px] h-[545px] max-[639px]:w-[95%] max-[639px]:mx-auto max-[639px]:mt-12 rounded-lg sm:mx-auto lg:ml-16 sm:mt-10 lg:mt-0">
+              <img src="./assets/Rectangle.png" alt="Rectangle" class="lg:w-[573px] lg:h-[545px] sm:w-[335px] sm:h-[223px] max-[639px]:w-[95%] max-[639px]:mx-auto max-[639px]:mt-12 rounded-lg sm:mx-auto lg:ml-16 sm:mt-10 lg:mt-0">
              </div>
           </div>
         </div>
 
         <!-- Info sections -->
-        <div class="container mx-auto mt-24 py-12 bg-white rounded-2xl">
+        <div class="container mx-auto lg:mt-24 sm:mt-10 py-12 bg-white rounded-2xl">
         <div class="grid sm:gap-12 lg:grid-cols-4 sm:grid-cols-1 text-center max-[639px]:gap-14">
           <!-- client review -->
            <div class="mx-auto space-y-2">
@@ -217,31 +220,31 @@
         <div class="container mx-auto text-center pt-24 max-[639px]:px-3 sm:px-3">
           <a href="#" class="text-sm font-semibold bg-[#FFFFFF] p-2 rounded-full"><i class="fa-solid fa-arrow-right"></i> How We Works</a>
 
-          <h1 class="text-5xl font-black py-5">Our Work Process</h1>
+          <h1 class="lg:text-5xl sm:text-3xl font-black py-5">Our Work Process</h1>
           <p class="text-[#494949] lg:w-2/3 mx-auto max-[639px]:px-3 sm:w-[98%] text-sm">The work process of constructing a building involves a series of well-coordinated stages, from initial planning to the final handover. Each stage requires careful execution and collaboration among various professionals, including architects, engineers, contractors, and project managers.</p>
 
           <!-- Work process 4 cards -->
-          <div class="grid lg:grid-cols-4 sm:grid-cols-1 py-12 max-[639px]:gap-12 sm:gap-6 lg:space-x-6">
+          <div class="grid lg:grid-cols-4 sm:grid-cols-1  lg:py-12 sm:pt-8 max-[639px]:gap-12 sm:gap-6 lg:space-x-6">
             <!-- concept cards -->
-            <div class="bg-[#E7C1D3] rounded-xl text-left p-6">
+            <div class="bg-[#E7C1D3] sm:w-[288px] sm:mx-auto rounded-xl text-left p-6">
               <img src="./assets/concept.png" alt="concept">
               <h2 class="text-lg font-black">Concept</h2>
               <p class="text-sm text-[#494949]">A concept is a fundamental idea that forms the foundation for further development.</p>
             </div>
             <!-- design cards -->
-            <div class="bg-[#EFDA6E] rounded-xl text-left p-6">
+            <div class="bg-[#EFDA6E] sm:w-[288px] sm:mx-auto rounded-xl text-left p-6">
               <img src="./assets/flow-chart.png" alt="concept">
               <h2 class="text-lg font-black">Design Process</h2>
               <p class="text-sm text-[#494949]">The design process for constructing a building involves a series of systematic steps.</p>
             </div>
             <!-- supervision cards -->
-            <div class="bg-[#A4DAC3] rounded-xl text-left p-6">
+            <div class="bg-[#A4DAC3] sm:w-[288px] sm:mx-auto rounded-xl text-left p-6">
               <img src="./assets/vision.png" alt="concept">
               <h2 class="text-lg font-black">Supervision</h2>
               <p class="text-sm text-[#494949]">Supervision is the process of overseeing and guiding individuals or teams.</p>
             </div>
             <!-- budget cards -->
-            <div class="bg-[#77AAEA] rounded-xl text-left p-6">
+            <div class="bg-[#77AAEA] sm:w-[288px] sm:mx-auto rounded-xl text-left p-6">
               <img src="./assets/budget-planning.png" alt="concept">
               <h2 class="text-lg font-black">Budget Planning</h2>
               <p class="text-sm text-[#494949]">Budget planning is the process of creating a financial plan that outlines expected income.</p>
@@ -251,37 +254,37 @@
         </div>
       </section>
 
-      <section class="py-24">
-        <div class="container mx-auto">
+      <section class="py-24 lg:w-full sm:w-[335px] sm:mx-auto">
+        <div class="container mx-auto lg:pb-12">
           <div class="text-center">
             <a href="#" class="text-sm font-semibold bg-[#ABEF5F33] p-2 rounded-full text-center"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Explore our Latest works</a>
-            <h2 class="text-5xl font-black py-5">Our Latest Portfolio</h2>
+            <h2 class="lg:text-5xl sm:text-3xl font-black py-5">Our Latest Portfolio</h2>
             <p class="lg:w-2/4 sm:w-[98%] max-[639px]:px-4 mx-auto text-[#494949] text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
 
           <!-- Top rows -->
-        <div class="grid lg:grid-cols-3 my-12 lg:gap-6 sm:px-4">
-          <div class="lg:col-span-2 lg:flex items-center lg:gap-6 max-[639px]:pt-4 border border-gray-300 rounded-lg px-4 lg:py-5 sm:pt-6">
-              <img src="./assets/img1.png" alt="Image One" class="sm:w-[287px] sm:h-[191px] sm:mx-auto lg:w-[260px] lg:h-[175px] max-[639px]:mx-auto gl:ml-5 lg:border-2 border-gray-300 border-dashed" />
+        <div class="grid lg:grid-cols-3 mt-12 lg:h-[227px] lg:gap-8">
+          <div class="lg:col-span-2 lg:flex items-center border lg:h-[227px] lg:space-x-6 lg:px-8 sm:pt-4">
+              <img src="./assets/img1.png" alt="Image One" class="sm:w-[287px] sm:h-[191px] sm:mx-auto lg:w-[260px] lg:h-[175px] max-[639px]:mx-auto lg:border-2 lg:border-gray-300 border-dashed" />
             <div class="lg:px-5 sm:w-[287px] lg:h-[175px] lg:w-[100%] sm:mx-auto sm:my-6 max-[639px]:mx-auto max-[639px]:w-[255px] max-[639px]:py-4">
               <h3 class="text-lg font-black mb-5">Commercial</h3>
               <p class="text-[#737373] text-sm mb-5"> In commercial projects, our focus is on creating environments that enhance productivity and brand identity while ensuring comfort and accessibility.</p>
               <a href="#" class="text-sm font-semibold rounded-full text-center"><span class="font-black">View Details</span> <i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F] rounded-full" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="flex items-center rounded-lg p-4 sm:py-6 border">
-            <img src="./assets/img2.png" alt="Image Two" class="sm:w-[295px] sm:h-[197px] lg:w-[326px] lg:h-[180px] mx-auto lg:border-2 border-gray-300 border-dashed">
+          <div class="lg:flex items-center border lg:mt-0 lg:py-0 sm:mt-6 sm:py-4 rounded-lg">
+            <img src="./assets/img2.png" alt="Image Two" class="sm:w-[295px] sm:h-[197px] lg:w-[326px] lg:h-[180px] mx-auto lg:border-2 lg:border-gray-300 border-dashed">
           </div>
         </div>
 
         <!-- bottom row -->
-          <div class="grid lg:grid-cols-4 sm:grid-cols-1 lg:gap-6 sm:px-4">
-          <div class="flex items-center border rounded-xl sm:py-6">
-            <img src="./assets/img3.png" alt="Image 3" class="lg:w-[226px] sm:w-[295px] max-[639px]:my-4 mx-auto border-2 border-gray-300 border-dashed">
+          <div class="grid lg:grid-cols-4 sm:grid-cols-1 lg:mt-8 lg:h-[227px] lg:gap-8">
+          <div class="border rounded-xl lg:flex lg:items-center sm:py-4">
+            <img src="./assets/img5.png" alt="Image 3" class="lg:w-[226px] sm:w-[295px] max-[639px]:my-4 mx-auto lg:border-2 lg:border-gray-300 border-dashed">
           </div>
-          <div class="lg:flex lg:col-span-2 sm:w-[100%] items-center sm:mx-auto lg:space-x-6 p-9 border rounded-xl sm:py-6">
-            <img src="./assets/img4.png" alt="Image 4" class="lg:w-[260px] sm:w-[287px] sm:mx-auto border-2 border-gray-300 border-dashed">
-            <div class="sm:w-[287px] max-[639px]:pb-4 pt-6 sm:mx-auto sm:py-6">
+          <div class="lg:flex lg:items-center lg:col-span-2 sm:w-[100%] sm:py-6 border rounded-xl">
+            <img src="./assets/img4.png" alt="Image 4" class="lg:w-[260px] lg:h-[175px] sm:w-[287px] max-[639px]:mx-auto sm:mx-auto lg:border-2 lg:border-gray-300 border-dashed">
+            <div class="sm:w-[287px] max-[639px]:pb-4 lg:mr-6 sm:mt-6 sm:mx-auto">
               <h3 class="text-lg font-black mb-5">Residential </h3>
               <p class="text-[#737373] text-sm mb-5">For residential projects, we prioritize creating homes that are both stylish and practical, reflecting the individual tastes and lifestyles of our clients.</p>
               <a href="#" class="text-sm font-semibold rounded-full text-center"><span class="font-black">View Details</span> <i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F] rounded-full" aria-hidden="true"></i></a>
@@ -289,7 +292,7 @@
         </div>
 
           <div class="flex items-center max-[639px]:py-4 border rounded-xl sm:py-6">
-            <img src="./assets/img5.png" alt="Image 5" class="lg:w-[226px] sm:w-[295px] mx-auto border-2 border-gray-300 border-dashed">
+            <img src="./assets/img3.png" alt="Image 5" class="lg:w-[226px] sm:w-[295px] mx-auto lg:border-2 lg:border-gray-300 border-dashed">
           </div>
           
         </div>
@@ -297,9 +300,121 @@
         </div>
       </section>
 
+      <!-- Article section start -->
+      <section class="py-24 bg-[#F4F4F4]">
+        <div class="container mx-auto">
+          <div class="text-center">
+            <a href="#" class="text-sm font-semibold bg-[#ABEF5F33] p-2 rounded-full text-center"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Rinterio News</a>
+            <h2 class="text-5xl font-black py-5">Read Our Articles and News</h2>
+            <p class="lg:w-2/4 sm:w-[98%] max-[639px]:px-4 mx-auto text-[#494949] text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+
+          <div class="lg:grid lg:grid-cols-3 max-[639px]:px-4 sm:px-4 mt-12">
+          <!-- articel-1 -->
+          <div class="bg-[#ffffff] p-8 sm:my-6 max-[639px]:my-6 rounded-3xl mx-auto">
+            <img src="./assets/article1.png" alt="Articles-1" class="lg:w-[326px] lg:h-[179px] sm:mx-auto max-[639px]:mx-auto lg:border-2 border-gray-300 border-dashed rounded-lg">
+            <div class="sm:w-[326px] sm:mx-auto">        
+              <div class="flex my-4"><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs></defs>
+              <path id="Vector" d="M18 2L18 4M6 2L6 4" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+              <path id="Vector" d="M11.99 13L12 13M11.99 17L12 17M15.99 13L16 13M8 13L8 13M8 17L8 17" stroke="#737373" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"></path>
+              <path id="Vector" d="M3.5 8L20.5 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+              <path id="Vector" d="M3.75 4.35C5 3 7.01 3 11.05 3L12.95 3C16.98 3 18.99 3 20.24 4.35C21.5 5.7 21.5 7.88 21.5 12.24L21.5 12.75C21.5 17.11 21.5 19.29 20.24 20.64C18.99 22 16.98 22 12.95 22L11.05 22C7.01 22 5 22 3.75 20.64C2.5 19.29 2.5 17.11 2.5 12.75L2.5 12.24C2.5 7.88 2.5 5.7 3.75 4.35Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"></path>
+              <path id="Vector" d="M3 8L21 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+              </svg>
+              <span class="text-sm font-semibold text-[#737373] mx-2">July14 2024</span><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs></defs>
+              <path id="Vector" d="M12 22C6.47 22 2 17.52 2 12C2 6.47 6.47 2 12 2C17.52 2 22 6.47 22 12C22 17.52 17.52 22 12 22Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000"></path>
+              <path id="Vector" d="M7.5 17C9.83 14.55 14.14 14.44 16.5 17M11.99 12C10.6 12 9.48 10.88 9.48 9.5C9.48 8.11 10.6 7 11.99 7C13.37 7 14.49 8.11 14.49 9.5C14.49 10.88 13.37 12 11.99 12Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"></path>
+              </svg><span class="ml-2 text-sm font-bold text-[#737373]">By Admin</span>
+            </div>
+              
+              <div class="lg:w-[326px]">
+                <h1 class="text-[#494949] font-black text-xl pb-3">How to choose the furniture right  of your home.</h1>
+                <p class="mb-12 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. </p>
+                <a href="#" class="text-xl font-bold text-center">Read More <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45 rounded_i" aria-hidden="true"></i></a>
+              </div>
+              </div>
+            </div>
+            <!-- articel-2 -->
+            <div class="bg-[#ffffff] p-8 sm:my-6 max-[639px]:my-6 rounded-3xl mx-auto">
+              <img src="./assets/article2.png" alt="Articles-1" class="lg:w-[326px] lg:h-[179px] sm:mx-auto max-[639px]:mx-auto lg:border-2 border-gray-300 border-dashed rounded-lg">
+              <div class="sm:w-[326px] sm:mx-auto">        
+                <div class="flex my-4"><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs></defs>
+                <path id="Vector" d="M18 2L18 4M6 2L6 4" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                <path id="Vector" d="M11.99 13L12 13M11.99 17L12 17M15.99 13L16 13M8 13L8 13M8 17L8 17" stroke="#737373" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"></path>
+                <path id="Vector" d="M3.5 8L20.5 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                <path id="Vector" d="M3.75 4.35C5 3 7.01 3 11.05 3L12.95 3C16.98 3 18.99 3 20.24 4.35C21.5 5.7 21.5 7.88 21.5 12.24L21.5 12.75C21.5 17.11 21.5 19.29 20.24 20.64C18.99 22 16.98 22 12.95 22L11.05 22C7.01 22 5 22 3.75 20.64C2.5 19.29 2.5 17.11 2.5 12.75L2.5 12.24C2.5 7.88 2.5 5.7 3.75 4.35Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"></path>
+                <path id="Vector" d="M3 8L21 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+                <span class="text-sm font-semibold text-[#737373] mx-2">July14 2024</span><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs></defs>
+                <path id="Vector" d="M12 22C6.47 22 2 17.52 2 12C2 6.47 6.47 2 12 2C17.52 2 22 6.47 22 12C22 17.52 17.52 22 12 22Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000"></path>
+                <path id="Vector" d="M7.5 17C9.83 14.55 14.14 14.44 16.5 17M11.99 12C10.6 12 9.48 10.88 9.48 9.5C9.48 8.11 10.6 7 11.99 7C13.37 7 14.49 8.11 14.49 9.5C14.49 10.88 13.37 12 11.99 12Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"></path>
+                </svg><span class="ml-2 text-sm font-bold text-[#737373]">By Admin</span>
+              </div>
+                
+                <div class="lg:w-[326px]">
+                  <h1 class="text-[#494949] font-black text-xl pb-3">How to choose the furniture right  of your home.</h1>
+                  <p class="mb-12 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. </p>
+                  <a href="#" class="text-xl font-bold text-center">Read More <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45 rounded_i" aria-hidden="true"></i></a>
+                </div>
+                </div>
+              </div>
+              <!-- article-3 -->
+              <div class="bg-[#ffffff] p-8 sm:my-6 max-[639px]:my-6 rounded-3xl mx-auto">
+                <img src="./assets/article3.png" alt="Articles-1" class="lg:w-[326px] lg:h-[179px] sm:mx-auto max-[639px]:mx-auto lg:border-2 border-gray-300 border-dashed rounded-lg">
+                <div class="sm:w-[326px] sm:mx-auto">        
+                  <div class="flex my-4"><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs></defs>
+                  <path id="Vector" d="M18 2L18 4M6 2L6 4" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                  <path id="Vector" d="M11.99 13L12 13M11.99 17L12 17M15.99 13L16 13M8 13L8 13M8 17L8 17" stroke="#737373" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"></path>
+                  <path id="Vector" d="M3.5 8L20.5 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                  <path id="Vector" d="M3.75 4.35C5 3 7.01 3 11.05 3L12.95 3C16.98 3 18.99 3 20.24 4.35C21.5 5.7 21.5 7.88 21.5 12.24L21.5 12.75C21.5 17.11 21.5 19.29 20.24 20.64C18.99 22 16.98 22 12.95 22L11.05 22C7.01 22 5 22 3.75 20.64C2.5 19.29 2.5 17.11 2.5 12.75L2.5 12.24C2.5 7.88 2.5 5.7 3.75 4.35Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"></path>
+                  <path id="Vector" d="M3 8L21 8" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"></path>
+                  </svg>
+                  <span class="text-sm font-semibold text-[#737373] mx-2">July14 2024</span><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs></defs>
+                  <path id="Vector" d="M12 22C6.47 22 2 17.52 2 12C2 6.47 6.47 2 12 2C17.52 2 22 6.47 22 12C22 17.52 17.52 22 12 22Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000"></path>
+                  <path id="Vector" d="M7.5 17C9.83 14.55 14.14 14.44 16.5 17M11.99 12C10.6 12 9.48 10.88 9.48 9.5C9.48 8.11 10.6 7 11.99 7C13.37 7 14.49 8.11 14.49 9.5C14.49 10.88 13.37 12 11.99 12Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"></path>
+                  </svg><span class="ml-2 text-sm font-bold text-[#737373]">By Admin</span>
+                </div>
+                  
+                  <div class="lg:w-[326px]">
+                    <h1 class="text-[#494949] font-black text-xl pb-3">How to choose the furniture right  of your home.</h1>
+                    <p class="mb-12 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. </p>
+                    <a href="#" class="text-xl font-bold text-center">Read More <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45 rounded_i" aria-hidden="true"></i></a>
+                  </div>
+                  </div>
+                </div>
+
+              
+          </div>
+
+        </div>
+      </section>
 
       <!-- unique section start -->
-      <section class="py-24 bg-gradient-to-t from-gray-200 to-stone-300">
+      <section class="py-24 mt-4 bg-gradient-to-t from-gray-200 to-stone-300">
         <div class="container mx-auto max-[639px]:px-4 px-4">
           <div class="text-center max-[639px]:px-4">
             <h2 class="lg:text-5xl sm:text-4xl max-[639px]:text-4xl pb-4 font-black">Out clients</h2>
@@ -370,9 +485,7 @@
       </section>
       <!-- unique section end -->
 
-      
-
-      <section class="py-24 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-center">
+      <section class="py-24 mt-3 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-center -bg-opacity-100">
         <div class="container mx-auto">
           <div class="text-center">
             <a href="#" class="text-sm font-semibold bg-[#ABEF5F33] p-2 rounded-full text-center"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Let's Connect</a>
@@ -403,7 +516,6 @@
 
         </div>
       </section>
-
     </main>
 
     <footer class="bg-[#1C1C1C] max-[639px]:px-4 py-24">
@@ -425,7 +537,7 @@
           </ul>
         </div>
 
-        <button class="bg-[#ABEF5F] rounded-full py-2 px-3 font-black">Book Consult <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] p-2 ml-1 rounded-full"></i></button>
+        <button class="sm:w-[311px] bg-[#ABEF5F] rounded-full py-2 px-3 font-black">Book Consult <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] p-2 ml-1 rounded-full"></i></button>
       </div>
     </footer>
 
